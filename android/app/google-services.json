@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841789276788",
+    "project_id": "projeto-b592c",
+    "storage_bucket": "projeto-b592c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841789276788:android:637e5fde8aadfd464c4721",
+        "android_client_info": {
+          "package_name": "com.helpdesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841789276788-4n7llcnqf99nhcvquaoeekn1c3oknrk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu-tT4frYwsPx7jO4Z8UHIhhbStc-uLis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841789276788-4n7llcnqf99nhcvquaoeekn1c3oknrk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
