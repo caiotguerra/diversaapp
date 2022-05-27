@@ -2,7 +2,7 @@ export default {
   COLORS: {
     BACKGROUND: '#F3F2F8',
 
-    PRIMARY: '#6100FF',
+    PRIMARY: '#118C4F',
     SECONDARY: '#FF366A',
 
     TEXT: '#383B43',
