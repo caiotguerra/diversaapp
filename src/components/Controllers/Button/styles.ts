@@ -7,12 +7,12 @@ export const Container = styled(RectButton)`
   border-radius: 12px;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.COLORS.PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.LIGHTGREEN};
 `;
 
 export const Title = styled.Text`
   font-size: 14px;
-  color: ${({ theme }) => theme.COLORS.WHITE};
+  color: ${({ theme }) => theme.COLORS.DARKGREEN};
   font-family: ${({ theme }) => theme.FONTS.TEXT};
 `;
 

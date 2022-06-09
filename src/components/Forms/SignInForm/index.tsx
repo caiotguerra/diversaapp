@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
+
 import auth from '@react-native-firebase/auth';
 
 import { FooterButton } from '@components/Controllers/FooterButton';
@@ -40,7 +41,6 @@ export function SignInForm() {
 
   return (
     <Form>
-      <Title>Entrar</Title>
       <Input placeholder="E-mail" onChangeText={setEmail} />
       <Input placeholder="Senha" secureTextEntry onChangeText={setPassword} />
       <Button title="Entrar" onPress={handleSignIn} isLoading={isLoading} />

@@ -1,6 +1,6 @@
 export default {
   COLORS: {
-    BACKGROUND: '#F3F2F8',
+    BACKGROUND: '#FFFFFF',
 
     PRIMARY: '#118C4F',
     SECONDARY: '#FF366A',
@@ -9,6 +9,8 @@ export default {
     SUBTEXT: '#8D919E',
 
     WHITE: '#FFFFFF',
+    LIGHTGREEN: '#a6ffcc',
+    DARKGREEN: '#118C4F',
     BORDER: '#C5CADA'
   },
 
