@@ -1,8 +1,9 @@
 import React from 'react';
-import { KeyboardAvoidingView, Platform } from 'react-native';
+import { KeyboardAvoidingView, Platform, Text } from 'react-native';
 import { SignInForm } from '@components/Forms/SignInForm';
 import { Container, Content } from './styles';
-import  Logo  from '@components/Logo'
+import  Logo  from '@components/Logo';
+import Autoria from '@components/Autoria';
 
 export function SignIn() {
   return (
@@ -13,6 +14,7 @@ export function SignIn() {
           <SignInForm />
         </Content>
       </KeyboardAvoidingView>
+      <Autoria />
     </Container>
   );
 }

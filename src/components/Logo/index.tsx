@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
         height: 150,
         resizeMode: 'contain',
     },
-  });
+    
+    },
+  );
 
 const Logo = () => {
     return(
