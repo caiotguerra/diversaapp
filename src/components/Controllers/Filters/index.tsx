@@ -13,20 +13,10 @@ export function Filters({ onFilter }: Props) {
 
   return (
     <Container>
-      <Title>Filtre pelo status do chamado</Title>
+      
 
-      <Options>
-        <Filter
-          title="Abertos"
-          backgroundColor={theme.COLORS.SECONDARY}
-          onPress={() => onFilter('open')}
-        />
-
-        <Filter
-          title="Encerrados"
-          backgroundColor={theme.COLORS.PRIMARY}
-          onPress={() => onFilter('closed')}
-        />
+        <Options>
+        
       </Options>
     </Container>
   );

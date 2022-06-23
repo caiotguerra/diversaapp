@@ -1,6 +1,6 @@
 import React from 'react';
-import { MaterialIcons } from '@expo/vector-icons';
 import { useTheme } from 'styled-components/native';
+
 
 import {
   Container,
@@ -9,8 +9,6 @@ import {
   Header,
   Title,
   Label,
-  Info,
-  Footer,
   OrderStyleProps
 } from './styles';
 
@@ -35,29 +33,14 @@ export function Order({ data }: Props) {
 
       <Content>
         <Header>
-          <Title>{data.description}</Title>
-          <MaterialIcons
-            name={data.status === "open" ? "hourglass-empty" : "check-circle"}
-            size={24}
-            color={data.status === "open" ? theme.COLORS.SECONDARY : theme.COLORS.PRIMARY}
-          />
+          <Title>{data.patrimony}</Title>
+          <Label> {data.description}</Label>
+          <Label></Label>
         </Header>
 
-        <Footer>
-          <Info>
-            <MaterialIcons name="schedule" size={16} color={theme.COLORS.SUBTEXT} />
-            <Label>
-              20/01/22 às 14h
-            </Label>
-          </Info>
+        
 
-          <Info>
-            <MaterialIcons name="my-location" size={16} color={theme.COLORS.SUBTEXT} />
-            <Label>
-              {data.patrimony}
-            </Label>
-          </Info>
-        </Footer>
+      
       </Content>
     </Container>
   );

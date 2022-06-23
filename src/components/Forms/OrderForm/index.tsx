@@ -24,18 +24,18 @@ export function OrderForm() {
       status: 'open',
       created_at: firestore.FieldValue.serverTimestamp()
     })
-    .then(() => Alert.alert("Chamado", "Chamado aberto com sucesso!"))
+    .then(() => Alert.alert("Despesa", "Despesa registrada com Sucesso!"))
     .catch((error) => console.log(error))
     .finally(() => setIsLoading(false));
   }
 
   return (
     <Form>
-      <Title>Novo chamado</Title>
-      <Input placeholder="Número do Patrimônio" onChangeText={setPatrimony} />
+      <Title>Nova Despesa</Title>
+      <Input placeholder="Valor" onChangeText={setPatrimony} />
       <TextArea placeholder="Descrição" onChangeText={setDescription} />
 
-      <Button title="Enviar chamado" isLoading={isLoading} onPress={handleNewOrder} />
+      <Button title="Registrar Despesa" isLoading={isLoading} onPress={handleNewOrder} />
     </Form>
   );
 }

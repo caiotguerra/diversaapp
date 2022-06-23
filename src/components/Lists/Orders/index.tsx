@@ -32,17 +32,13 @@ export function Orders() {
     });
 
     return () => subscriber();
-  }, [status]);
+  },[status]);
 
   return (
     <Container>
       <Filters onFilter={setStatus} />
 
-      <Header>
-        <Title>Chamados {status === 'open' ? 'aberto' : 'encerrado'}</Title>
-        <Counter>{orders.length}</Counter>
-      </Header>
-
+      
       {
         isLoading ?
           <Load />

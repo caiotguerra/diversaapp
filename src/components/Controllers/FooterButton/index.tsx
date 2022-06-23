@@ -15,7 +15,7 @@ export function FooterButton({ title, icon, ...rest }: Props) {
 
   return (
     <Container {...rest}>
-      <MaterialIcons name={icon} size={24} color={theme.COLORS.TEXT} />
+      <MaterialIcons name={icon} size={24} color={theme.COLORS.LIGHTGREEN} />
       <Title>{title}</Title>
     </Container>
   );

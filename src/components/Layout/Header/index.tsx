@@ -13,8 +13,8 @@ export function Header() {
   return (
     <Container>
       <Greeting>
-        <Title>HelpDesk</Title>
-        <SubTitle>Conte conosco, estamos aqui para ajudar.</SubTitle>
+        <Title>Minhas Despesas</Title>
+        <SubTitle>Cadastre suas despesas</SubTitle>
       </Greeting>
 
       <LogoutButton onPress={handleSignOut} />
