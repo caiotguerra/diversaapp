@@ -18,7 +18,7 @@ export function Orders() {
 
     const subscriber = firestore()
     .collection('orders')
-    .where('status', '==', status)
+    .orderBy("created_at", "desc")
     .onSnapshot(querySnapshot => {
       const data = querySnapshot.docs.map(doc => {
         return {
