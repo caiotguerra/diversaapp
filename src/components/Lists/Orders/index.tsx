@@ -4,7 +4,6 @@ import { FlatList } from 'react-native';
 import firestore from '@react-native-firebase/firestore';
 
 import { Load } from '@components/Animations/Load';
-import { Filters } from '@components/Controllers/Filters';
 import { Order, OrderProps } from '@components/Controllers/Order';
 import { Container, Header, Title, Counter } from './styles';
 
@@ -36,7 +35,6 @@ export function Orders() {
 
   return (
     <Container>
-      <Filters onFilter={setStatus} />
 
       
       {
