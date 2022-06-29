@@ -33,7 +33,7 @@ export function Order({ data }: Props) {
 
       <Content>
         <Header>
-          <Title>{data.description}{'\n'}12/08/2022</Title>
+          <Title>{data.description}{'\n'}{data.equipment}</Title>
           <Label> {data.patrimony}</Label>
         </Header>
 
