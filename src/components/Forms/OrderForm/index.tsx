@@ -8,8 +8,8 @@ import { Button } from '@components/Controllers/Button';
 import { Alert } from 'react-native';
 
 export function OrderForm() {
-  const [patrimony, setPatrimony] = useState('');
-  const [equipment, setEquipment] = useState('');
+  const [amount, setAmount] = useState('');
+  const [date, setDate] = useState('');
   const [description, setDescription] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -19,9 +19,9 @@ export function OrderForm() {
       firestore()
       .collection('orders')
       .add({
-        patrimony,
+        amount,
         description,
-        equipment,
+        date,
         status: 'open',
         created_at: firestore.FieldValue.serverTimestamp()
       })
@@ -42,9 +42,9 @@ export function OrderForm() {
   return (
     <Form>
       <Title>Nova Despesa</Title>
-      <Input placeholder="Valor" onChangeText={setPatrimony} keyboardType="numeric" />
+      <Input placeholder="Valor" onChangeText={setAmount} keyboardType="numeric" />
       <Input placeholder="Descrição" onChangeText={setDescription} />
-      <Input placeholder="Data" onChangeText={setEquipment} />
+      <Input placeholder="Data" onChangeText={setDate} />
       
 
       <Button title="Registrar Despesa" isLoading={isLoading} onPress={handleNewOrder} />
