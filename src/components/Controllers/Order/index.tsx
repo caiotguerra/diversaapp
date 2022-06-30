@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components/native';
 
 import {
   Container,
-  Status,
+ // Status,
   Content,
   Header,
   Title,
@@ -15,8 +15,8 @@ import {
 
 export type OrderProps = OrderStyleProps & {
   id: string;
-  patrimony: string;
-  equipment: string;
+  amount: string;
+  date: string;
   description: string;
 }
 
@@ -29,12 +29,12 @@ export function Order({ data }: Props) {
 
   return (
     <Container>
-      <Status status={data.status} />
+      {/*<Status status={data.status} />*/}
 
       <Content>
         <Header>
-          <Title>{data.description}{'\n'}{data.equipment}</Title>
-          <Label> {data.patrimony}</Label>
+          <Title>{data.description}{'\n'}{data.date}</Title>
+          <Label> {data.amount}</Label>
         </Header>
 
         

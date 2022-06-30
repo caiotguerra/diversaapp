@@ -14,7 +14,7 @@ export function OrderForm() {
   const [isLoading, setIsLoading] = useState(false);
 
   function handleNewOrder() {
-    if(description.length > 3){
+    if(description.length > 2){
       setIsLoading(true);
       firestore()
       .collection('orders')
@@ -22,7 +22,6 @@ export function OrderForm() {
         amount,
         description,
         date,
-        status: 'open',
         created_at: firestore.FieldValue.serverTimestamp()
       })
       
@@ -32,7 +31,7 @@ export function OrderForm() {
 
     }else{
 
-      Alert.alert('Opa!', 'Por favor inclua a descrição da sua despesa', [
+      Alert.alert('Opa!', 'Por favor preencha todos os campos da sua despesa', [
         {text: 'Entendido', onPress: () => console.log('alerta fechado')}
       ])
     }

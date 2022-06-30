@@ -19,7 +19,7 @@ export function NewOrder() {
       <BottomSheetModalProvider>
         <BottomSheetModal
           ref={bottomSheetRef}
-          snapPoints={['50%']}
+          snapPoints={['80%']}
           style={{ padding: 24 }}
           enablePanDownToClose={true}
           backdropComponent={() => <Background />}
