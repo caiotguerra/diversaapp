@@ -19,13 +19,16 @@ export function SignInForm() {
 
   function handleSignIn() {
     setIsLoading(true);
-
     auth()
     .signInWithEmailAndPassword(email, password)
-    .then(() => {
-      Alert.alert("Logado com sucesso!");
-    } )
-    . catch((error) => console.log(error))
+    .then(() => Alert.alert("Logado com sucesso!"))
+    .catch((error) => { Alert.alert("Usuário ou senha incorretos!")
+      setIsLoading(false);
+      console.log(error)
+    
+  });
+  
+  
   }
 
   function handleForgotPassword() {
